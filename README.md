@@ -230,3 +230,32 @@ int main (void)
 }
 */
 ```
+## 4.16  
+```
+#include <stdio.h>
+int main(void)
+{
+    int n , i;
+    double sum=0 , sum1 , sum2=0;
+    printf("请输入n值：");
+    scanf("%d",&n);
+
+    for(;n>=1;n--)
+    {
+        i=n;
+        for(;i>=1;i--)
+        {
+            sum1+=i;
+        }
+        printf("%f\n",sum1);
+        sum2=1.0/sum1;
+        printf("%f\n",sum2);
+        sum+=sum2;
+        printf("%f\n",sum);
+        sum1=0;
+
+    }
+    printf("%f\n",sum);
+    return 0;
+}
+```
