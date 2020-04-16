@@ -155,3 +155,77 @@ int main (void)
 
 ```
 God!Also have little problem!
+## 4.14--4.16  
+
+#include <stdio.h>
+int main(void)
+{
+    int n , i;
+    double sum=0 , sum1 , sum2;
+    printf("请输入n值：");
+    scanf("%d",&n);
+    for(;n>=1;n--)
+    {
+        for(;n>=1;n--)
+        {
+            sum1+=n;
+        }
+        sum2=1.0/sum1;
+        sum+=sum2;
+    }
+    printf("%f",sum);
+    return 0;
+}
+/*
+#include <stdio.h>
+int main (void)
+{
+
+    int n , num , k , i;
+    printf("请输入行数\n");
+    scanf("%d",&n);
+    i = n;
+    for(;i>0;i--)
+    {
+        num=2*i-1;
+        for(k=0;k<n-i;k++)
+        {
+            printf(" ");
+        }
+        for(;num>0;num--)
+        {
+            printf("*");
+        }
+            printf("\n");
+    }
+    return 0;
+}
+*/
+/*
+#include <stdio.h>
+int main (void)
+{
+    int n , i ,j ;
+    int sum=0;
+    printf("请输入n值：");
+    scanf("%d",&n);
+    for(i= 2;i<=n;i++)
+    {
+        int t = 1;
+        for(j=2;j<i;j++)
+        {
+            if(i%j==0)
+            {
+                t=0;
+                break;
+            }
+        }
+        if(t==1)
+        {
+            sum+=i;
+        }
+    }
+    printf("素数和为%d\n",sum);
+    return 0;
+}
+*/
